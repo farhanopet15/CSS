@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="dumbways.png" alt="dumbways" />
+    </div>
+    <nav class="menu">
+      <a href="#">Home</a>
+      <a href="#">My Project</a>
+    </nav>
+    <a href="#" class="btn-contact">Contact Me</a>
+  </header>
+
+  <!-- Contact Form -->
+  <main class="form-container">
+    <h2>GET IN TOUCH</h2>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Your name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Your email" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" placeholder="Your phone number" required />
+
+      <label for="subject">Subject</label>
+      <select id="subject" required>
+        <option value="">Select subject</option>
+        <option value="project">Project Inquiry</option>
+        <option value="job">Job Offer</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="message">Your Message</label>
+      <textarea id="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit">submit</button>
+    </form>
+  </main>
+
+</body>
+</html>
